@@ -176,7 +176,7 @@ value_counts = df3[trait+'_Rarity'].value_counts()
 fig = px.bar(x=value_counts.index, y=value_counts.values)
 
 # Set labels and title
-fig.update_layout(xaxis_title=f'{trait}+"_Rarity"', yaxis_title='Count', title=f'Value Counts of {trait}')
+fig.update_layout(xaxis_title=f'{trait}_Rarity', yaxis_title='Count', title=f'Value Counts of {trait}')
 st.plotly_chart(fig)
 st.subheader('Different Gotchi Classes')
 col_mk, col_mk2 = st.columns(2)
